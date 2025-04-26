@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country and Weather Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Country Explorer</h1>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+        <div class="search-area">
+            <input type="text" id="searchInput" placeholder="Search for a country...">
+            <button onclick="start()">Search</button>
+        </div>
+
+        <div id="results" class="results-grid">
+            <!-- Country cards will appear here -->
+        </div>
+    </main>
+
+    <!-- Modal Popup -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>MIS ASSIGNMENT</p>
+    </footer>
+
+    <script src="scriot.js"></script>
+</body>
+</html>
+
