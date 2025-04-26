@@ -71,7 +71,7 @@ function getWeather(capitalCity) {
         return;
     }
 
-    const apiKey = "734c5998e6bed94acb326e5c317cd66b"; // YOUR REAL API KEY
+    const apiKey = "734c5998e6bed94acb326e5c317cd66b"; 
     var url = `https://api.openweathermap.org/data/2.5/weather?q=${capitalCity}&appid=${apiKey}&units=metric`;
 
     fetch(url)
@@ -82,7 +82,7 @@ function getWeather(capitalCity) {
                 return;
             }
 
-            // Prepare modal content
+            
             var modalBody = document.getElementById("modalBody");
             modalBody.innerHTML = `
                 <h2>Weather in ${data.name}</h2>
@@ -107,7 +107,7 @@ function closeModal() {
     document.getElementById("modal").style.display = "none";
 }
 
-// Optional: Close modal if clicked outside
+
 window.onclick = function(event) {
     var modal = document.getElementById("modal");
     if (event.target == modal) {
